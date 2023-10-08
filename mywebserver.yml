@@ -20,7 +20,7 @@
       state: present
     when: ansible_os_family== "Redhat"
 
-  - name: in this task i want to start webserver on redhat
+  - name: in this task i want to start httpd webserver on redhat
     service:
         name: httpd
         state: started
